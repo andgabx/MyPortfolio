@@ -15,14 +15,14 @@ const App = () => {
       </div>
 
       {/* Conteúdo do app */}
-      <div className="relative z-10 container mx-auto p-8">
+      <div className="relative z-10 container mx-auto">
       <Navbar/>
 
 
-        <div className="py-5">
+        <div className="">
         <HeroSection />
         </div>
-        <div className="py-10">
+        <div className="-">
         <About />
         </div>
         <Technologies/>
