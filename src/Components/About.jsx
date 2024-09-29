@@ -3,7 +3,7 @@ import { AboutMe2 } from "../Constants";
 
 const About = () => {
   return (
-    <div className=" border-neutral-900 pb-4">
+    <div className=" border-neutral-900">
       <p className="text-center mb-10 text-4xl">About Me</p>
       <div className="flex flex-wrap">
         {/* Seção da imagem à esquerda */}
