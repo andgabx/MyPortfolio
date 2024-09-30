@@ -7,10 +7,10 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="flex items-center justify-center">
-      <div className="container mx-auto py=8">
+    <section className="bg-[#3b2314] flex items-center justify-center">
+      <div className="container mx-auto ">
         <div className="max-w-md mx-auto">
-          <h1 className="text-4xl text-center m-7">Get in Touch</h1>
+          <h1 className="text-3xl pb-4 font-bold tracking-tighter sm:text-5xl text-center">Get in Touch</h1>
           <div className="space-y-6">
             <a href="mailto:gabrielvalencasa98@gmail.com" className="flex items-center justify-center space-x-3 hover:underline transition-colors">
               <CiMail className="h-5 w-5" />

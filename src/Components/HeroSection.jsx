@@ -1,35 +1,32 @@
 import React from 'react';
-import { AboutMe } from '../Constants';
 
 const HeroSection = () => {
   return (
-    <div className="lg:mb-35">
-      <div className="flex flex-wrap">
-        {/* Texto e informações do lado esquerdo */}
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center">
-            <div className="my-5 pb-16 text-6xl font-thin tracking-light lg:text-8xl">
-              Anderson Gabriel
-            </div>
-            <span className= "text-xl">Front End Developer</span>
-            <div className="l text-justify my-2 max-w-xl py-6 font-light">
-              {AboutMe}
-            </div>
-          </div>
-        </div>
-
-        {/* Seção da imagem no lado direito */}
-        <div className="w-full lg:w-1/2 mx-auto">
-          <div className="flex sm:justify-center lg:pt-20 ">
-            <img
-              src="src\assets\GabrielProfilePic.png"  // Substitua pelo caminho da sua imagem
-              alt="Foto de Anderson Gabriel"
-              className="max-w-sm rounded-lg shadow-2xl w-64 h-64 object-cover lg:w-96 lg:h-96"
-            />
-          </div>
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-[#3b2314] text-white">
+  <div class="container px-4 md:px-6">
+    <div class="grid gap-6 lg:grid-cols-[400px_1fr] lg:gap-12 xl:grid-cols-[600px_1fr]">
+      <img
+        width="550"
+        height="550"
+        alt="Hero"
+        class="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-first"
+        src="src\assets\GabrielProfilePic.png"
+      />
+      <div class="flex flex-col justify-center space-y-4">
+        <div class="space-y-2">
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+            Anderson Gabriel
+          </h1>
+          <p class="max-w-[600px] text-[#e0e0e0] md:text-xl">
+            As a seasoned front-end developer, I specialize in creating visually stunning and highly interactive
+            user interfaces. With a keen eye for design and a deep understanding of modern web technologies, I
+            transform complex ideas into intuitive and engaging digital experiences.
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</section>
   );
 }
 

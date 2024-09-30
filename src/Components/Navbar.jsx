@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-        <div className="navbar justify-between">
+        <div className="bg-[#3b2314] navbar justify-between py-6">
           <div>
           <a href='' className="hover:animate-pulse text-2xl bold">AG</a>
           </div>
