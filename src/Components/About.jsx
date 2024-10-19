@@ -26,7 +26,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-[#3b2314] text-white">
+    <section className="w-full py-12 bg-[#3b2314] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           {/* Texto com animação da direita para a esquerda */}

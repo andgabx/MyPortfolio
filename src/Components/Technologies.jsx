@@ -16,7 +16,7 @@ const Technologies = () => {
   }, []);
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-24 bg-[#3b2314] text-white">
+    <section className="w-full bg-[#3b2314] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col gap-5 items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
