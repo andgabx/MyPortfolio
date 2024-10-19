@@ -17,7 +17,7 @@ Welcome to my personal portfolio project! This is my first portfolio website whe
 - **JavaScript/TypeScript**: For interactive elements and functionality.
 - **Vite**: A fast and lightweight build tool.
 - **PostCSS**: For processing CSS with Tailwind.
-- **Framer Motion**: To be used soon for adding animations.
+- **Anime.JS**: Simple animations library.
 
 ## 🚀 Deployment
 
