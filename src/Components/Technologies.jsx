@@ -13,10 +13,19 @@ const Technologies = () => {
       loop: true,
       delay: anime.stagger(300), // Aplica tempos diferentes para cada ícone
     });
+
+    // Animação para a section surgindo da direita para a esquerda
+    anime({
+      targets: '.technologies-section', // Seleciona a section
+      translateX: [1000, 0], // Move da direita para a posição original
+      opacity: [0, 1], // A opacidade começa em 0 e vai até 1
+      easing: 'easeOutExpo', // Suavização da animação
+      duration: 1500, // Duração da animação de 1.5 segundos
+    });
   }, []);
 
   return (
-    <section className="w-full bg-[#3b2314] text-white">
+    <section className="w-full py-24 bg-[#3b2314] text-white technologies-section">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col gap-5 items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

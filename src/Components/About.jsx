@@ -3,30 +3,27 @@ import anime from "animejs/lib/anime.es.js";
 
 const About = () => {
   useEffect(() => {
-    // Animação de entrada da direita para a esquerda para o conteúdo de texto
-    
-
-    // Animação de entrada da esquerda para a direita para a imagem
+  
     anime({
-      targets: ".about-image", // Seleciona a imagem
-      translateX: [-1000, 0], // Move da esquerda (fora da tela em 1000px) para a posição original (0)
-      opacity: [0, 1], // A opacidade começa em 0 e vai até 1
+      targets: ".about-image", 
+      translateX: [-1000, 0], 
+      opacity: [0, 1], 
       easing: "easeOutExpo",
       duration: 1500,
     });
 
     anime({
-      targets: ".about-text", // Seleciona o conteúdo de texto
-      translateY: [-50, 0], // Move da direita (fora da tela em 1000px) para a posição original (0)
-      opacity: [0, 1], // A opacidade começa em 0 e vai até 1
-      easing: "easeOutExpo", // Suavização da animação
-      duration: 1000, // Duração de 1.5 segundos
+      targets: ".about-text", 
+      translateY: [-50, 0], 
+      opacity: [0, 1], 
+      easing: "easeOutExpo", 
+      duration: 1000, 
       delay:500,
     });
   }, []);
 
   return (
-    <section className="w-full py-12 bg-[#3b2314] text-white">
+    <section className="w-full py-24 bg-[#3b2314] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           {/* Texto com animação da direita para a esquerda */}

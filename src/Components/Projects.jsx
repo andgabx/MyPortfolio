@@ -1,115 +1,88 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import anime from 'animejs/lib/anime.es.js';
 
-const Projects = () => {
+const projects = [
+  {
+    id: 1,
+    title: "Rizoma - Farm Management WebApp",
+    description: "A full-stack e-commerce solution with React and Node.js.",
+    image: "/placeholder.svg?height=300&width=400",
+    technologies: ["HTML5", "TailwindCSS", "Django"]
+  },
+  {
+    id: 2,
+    title: "Recipes by Gab",
+    description: "A responsive task management application built with Vue.js.",
+    image: "/placeholder.svg?height=300&width=400",
+    technologies: ["Vue.js", "Firebase", "Vuex", "Tailwind CSS"]
+  },
+  {
+    id: 3,
+    title: "CRUD Recipes",
+    description: "An interactive weather dashboard using React and OpenWeatherMap API.",
+    image: "/",
+    technologies: ["React", "OpenWeatherMap API", "Chart.js", "Axios"]
+  },
+];
+
+export default function MyProjectsSection() {
+  const [selectedProject, setSelectedProject] = useState(projects[0]);
+
+  // Função para animar a transição quando o projeto selecionado mudar
+  useEffect(() => {
+    anime({
+      targets: '.project-card',
+      opacity: [0, 1],       // Fade in
+      translateY: [20, 0],   // Movimento de baixo para cima
+      duration: 500,
+      easing: 'easeOutQuad'
+    });
+  }, [selectedProject]);
+
   return (
-    <div>
-      <section className="w-full bg-[#3b2314] text-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl pb-4">Front-End Projects</h2>
-              <p className="max-w-[700px] text-[#e0e0e0] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Check out some of my recent front-end projects:
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              <div className="rounded-lg border bg-[#e6d5bc] text-gray-900 shadow-sm">
-                <div className="flex flex-col space-y-1.5 p-6">
-                  <h3 className="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                    Projeto 1
-                  </h3>
-                </div>
-                <div className="p-6">
-                  <img
-                    width="300"
-                    height="200"
-                    src="/placeholder.svg"
-                    style={{ aspectRatio: "300 / 200", objectFit: "cover" }}
-                    alt="Project 1"
-                    className="rounded-md"
-                  />
-                </div>
-                <div className="flex justify-center items-center p-6">
-                  <button className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#d8bc94] text-white hover:bg-[#c9a67e] h-10 px-4 py-2">
-                  <p className="text-[#3b2314]">View Project</p>
-                  </button>
-                </div>
+    <section className="text-white p-24">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-5xl font-bold text-center py-12">My Projects</h2>
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="w-full md:w-1/3 space-y-4">
+            {projects.map((project) => (
+              <button
+                key={project.id}
+                onClick={() => setSelectedProject(project)}
+                className={`w-full text-left p-4 rounded-lg transition-colors ${
+                  selectedProject.id === project.id
+                    ? 'bg-[#3C2A21] text-white'
+                    : 'bg-white text-[#3C2A21] hover:bg-gray-200'
+                }`}
+              >
+                {project.title}
+              </button>
+            ))}
+          </div>
+          <div className="w-full md:w-2/3">
+            {/* Container que será animado quando o projeto mudar */}
+            <div className="bg-[#4E3629] p-6 rounded-lg project-card">
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                className="w-full h-64 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-2xl font-semibold mb-2">{selectedProject.title}</h3>
+              <p className="text-gray-300 mb-4">{selectedProject.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-[#3C2A21] text-white px-3 py-1 rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-              <div className="rounded-lg border bg-[#e6d5bc] text-gray-900 shadow-sm">
-                <div className="flex flex-col space-y-1.5 p-6">
-                  <h3 className="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                    Projeto 2
-                  </h3>
-                  
-                </div>
-                <div className="p-6">
-                  <img
-                    src="/placeholder.svg"
-                    width="300"
-                    height="200"
-                    alt="Project 2"
-                    className="rounded-md"
-                    style={{ aspectRatio: "300 / 200", objectFit: "cover" }}
-                  />
-                </div>
-                <div className="flex justify-center items-center p-6">
-                  <button className="items-center justify-center text-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#d8bc94] text-white hover:bg-[#c9a67e] h-10 px-4 py-2">
-                  <p className="text-[#3b2314]">View Project</p>
-                  </button>
-                </div>
-              </div>
-              <div className="rounded-lg border bg-[#e6d5bc] text-gray-900 shadow-sm">
-                <div className="flex flex-col space-y-1.5 p-6">
-                  <h3 className="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                    Projeto 3
-                  </h3>
-                </div>
-                <div className="p-6">
-                  <img
-                    width="300"
-                    height="200"
-                    alt="Project 3"
-                    className="rounded-md"
-                    src="/placeholder.svg"
-                    style={{ aspectRatio: "300 / 200", objectFit: "cover" }}
-                  />
-                </div>
-                <div className="flex justify-center items-center p-6">
-                  <button className="items-center justify-center text-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#d8bc94] text-white hover:bg-[#c9a67e] h-10 px-4 py-2">
-                    <p className="text-[#3b2314]">View Project</p>
-                  </button>
-                </div>
-              </div>
-
-              <div className="rounded-lg border bg-[#e6d5bc] text-gray-900 shadow-sm">
-                <div className="flex flex-col space-y-1.5 p-6">
-                  <h3 className="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                    Projeto 3
-                  </h3>
-                </div>
-                <div className="p-6">
-                  <img
-                    width="300"
-                    height="200"
-                    alt="Project 3"
-                    className="rounded-md"
-                    src="/placeholder.svg"
-                    style={{ aspectRatio: "300 / 200", objectFit: "cover" }}
-                  />
-                </div>
-                <div className="flex justify-center items-center p-6">
-                  <button className="items-center justify-center text-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 bg-[#d8bc94] text-white hover:bg-[#c9a67e] h-10 px-4 py-2">
-                    <p className="text-[#3b2314]">View Project</p>
-                  </button>
-                </div>
-              </div>
-              
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
-};
-
-export default Projects;
+}

@@ -23,7 +23,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="w-full bg-[#3b2314] text-white hero-section">
+    <section className="w-full py-24 bg-[#3b2314] text-white hero-section">
       <div className="container px-4 mx-auto md:px-6">
         <div className="grid gap-6 mx-auto lg:grid-cols[400px_1fr] lg:gap-12 xl:grid-cols-[600px_1fr]">
           <img

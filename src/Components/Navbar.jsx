@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-[#3b2314] navbar justify-between p-8">
+    <div className="bg-[#3b2314] navbar md-px-48 justify-between p-8">
       <div>
         <a href='' className="hover:animate-pulse text-2xl bold">AG</a>
       </div>
