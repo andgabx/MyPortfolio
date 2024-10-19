@@ -1,12 +1,36 @@
-import React from "react";
-import { AboutMe2 } from "../Constants";
+import React, { useEffect } from "react";
+import anime from "animejs/lib/anime.es.js";
 
 const About = () => {
+  useEffect(() => {
+    // Animação de entrada da direita para a esquerda para o conteúdo de texto
+    
+
+    // Animação de entrada da esquerda para a direita para a imagem
+    anime({
+      targets: ".about-image", // Seleciona a imagem
+      translateX: [-1000, 0], // Move da esquerda (fora da tela em 1000px) para a posição original (0)
+      opacity: [0, 1], // A opacidade começa em 0 e vai até 1
+      easing: "easeOutExpo",
+      duration: 1500,
+    });
+
+    anime({
+      targets: ".about-text", // Seleciona o conteúdo de texto
+      translateY: [-50, 0], // Move da direita (fora da tela em 1000px) para a posição original (0)
+      opacity: [0, 1], // A opacidade começa em 0 e vai até 1
+      easing: "easeOutExpo", // Suavização da animação
+      duration: 1000, // Duração de 1.5 segundos
+      delay:500,
+    });
+  }, []);
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-[#3b2314] text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-          <div className="flex flex-col justify-center space-y-4">
+          {/* Texto com animação da direita para a esquerda */}
+          <div className="flex flex-col justify-center space-y-4 about-text">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 About me
@@ -28,11 +52,13 @@ const About = () => {
               </p>
             </div>
           </div>
+
+          {/* Imagem com animação da esquerda para a direita */}
           <img
             width="550"
             height="550"
             alt="Hero"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last about-image"
             src="src/assets/GabrielAboutMe.png"
           />
         </div>
