@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div>
       <section className="w-full py-12 md:py-16 lg:py-32 bg-[#3b2314] text-white">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl pb-4">Front-End Projects</h2>

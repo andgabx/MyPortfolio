@@ -4,14 +4,14 @@ import { AboutMe2 } from "../Constants";
 const About = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-[#3b2314] text-white">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 About me
               </h1>
-              <p className="max-w-[600px] text-[#e0e0e0] md:text-xl">
+              <p className="max-w-[600px] text-[#e0e0e0] md:text-xl text-justify">
                 Ever since I can remember, Computer Science has been my dream
                 career. When I discovered the world of software development, I
                 knew I had found my path. While hardware is cool, my passion has

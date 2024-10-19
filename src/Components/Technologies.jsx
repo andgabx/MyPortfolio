@@ -4,7 +4,7 @@ import React from 'react';
 const Technologies = () => {
   return (
     <section class="w-full py-12 md:py-16 lg:py-24 bg-[#3b2314] text-white">
-  <div class="container px-4 md:px-6">
+  <div class="container mx-auto px-4 md:px-6">
     <div class="flex flex-col items-center justify-center space-y-4 text-center">
       <div class="space-y-2">
         <h2 class="text-3xl pb-4 font-bold tracking-tighter sm:text-5xl">Technologies</h2>
