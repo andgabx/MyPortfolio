@@ -33,15 +33,15 @@ export default function MyProjectsSection() {
     anime({
       targets: '.project-card',
       opacity: [0, 1],       // Fade in
-      translateY: [20, 0],   // Movimento de baixo para cima
-      duration: 500,
-      easing: 'easeOutQuad'
+      translateX: [-1000, 0],   // Movimento de baixo para cima
+      duration: 1500,
+      easing: 'easeOutExpo'
     });
-  }, [selectedProject]);
+  }, []);
 
   return (
-    <section className="text-white p-24">
-      <div className="max-w-6xl mx-auto">
+    <section className="text-white p-24 project-card">
+      <div className="max-w-6xl mx-auto ">
         <h2 className="text-5xl font-bold text-center py-12">My Projects</h2>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="w-full md:w-1/3 space-y-4">
@@ -61,7 +61,7 @@ export default function MyProjectsSection() {
           </div>
           <div className="w-full md:w-2/3">
             {/* Container que será animado quando o projeto mudar */}
-            <div className="bg-[#4E3629] p-6 rounded-lg project-card">
+            <div className="bg-[#4E3629] p-6 rounded-lg">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
