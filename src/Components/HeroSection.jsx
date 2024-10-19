@@ -38,7 +38,7 @@ const HeroSection = () => {
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Anderson Gabriel
               </h1>
-              <p className="w-full text-[#e0e0e0] md:text-xl text-justify">
+              <p className="max-w-[600px] text-[#e0e0e0] md:text-xl text-justify">
                 As a seasoned front-end developer, I specialize in creating visually stunning and highly interactive
                 user interfaces. With a keen eye for design and a deep understanding of modern web technologies, I
                 transform complex ideas into intuitive and engaging digital experiences.

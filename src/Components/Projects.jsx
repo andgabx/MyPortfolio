@@ -6,22 +6,22 @@ const projects = [
     id: 1,
     title: "Rizoma - Farm Management WebApp",
     description: "A full-stack e-commerce solution with React and Node.js.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["HTML5", "TailwindCSS", "Django"]
+    image: "",
+    technologies: ["HTML5", "TailwindCSS", "Django", "Azure"]
   },
   {
     id: 2,
     title: "Recipes by Gab",
     description: "A responsive task management application built with Vue.js.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Vue.js", "Firebase", "Vuex", "Tailwind CSS"]
+    image: "./src/assets/MockupRecipes.jpg",
+    technologies: ["HTML5", "TailwindCSS", "Django, Azure"]
   },
   {
     id: 3,
-    title: "CRUD Recipes",
+    title: "Digital Clock",
     description: "An interactive weather dashboard using React and OpenWeatherMap API.",
-    image: "/",
-    technologies: ["React", "OpenWeatherMap API", "Chart.js", "Axios"]
+    image: "./src/assets/MockupDigitalClock.jpg",
+    technologies: ["HTML5", "CSS", "Javascript"]
   },
 ];
 
@@ -40,7 +40,7 @@ export default function MyProjectsSection() {
   }, []);
 
   return (
-    <section className="text-white p-24 project-card">
+    <section className="text-white mx-auto p-24 project-card">
       <div className="max-w-6xl mx-auto ">
         <h2 className="text-5xl font-bold text-center py-12">My Projects</h2>
         <div className="flex flex-col md:flex-row gap-8">
