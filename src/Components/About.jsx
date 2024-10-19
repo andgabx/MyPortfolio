@@ -50,7 +50,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Imagem com animação da esquerda para a direita */}
           <img
             width="550"
             height="550"

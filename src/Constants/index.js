@@ -3,3 +3,27 @@ export const AboutMe =
 
 export const AboutMe2 =
   "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem";
+
+export const projects = [
+  {
+    id: 1,
+    title: "Rizoma - Farm Management WebApp",
+    description: "A full-stack e-commerce solution with React and Node.js.",
+    image: "",
+    technologies: ["HTML5", "TailwindCSS", "Django", "Azure"]
+  },
+  {
+    id: 2,
+    title: "Recipes by Gab",
+    description: "A responsive task management application built with Vue.js.",
+    image: "./src/assets/MockupRecipes.jpg",
+    technologies: ["HTML5", "TailwindCSS", "Django, Azure"]
+  },
+  {
+    id: 3,
+    title: "Digital Clock",
+    description: "An interactive weather dashboard using React and OpenWeatherMap API.",
+    image: "./src/assets/MockupDigitalClock.jpg",
+    technologies: ["HTML5", "CSS", "Javascript"]
+  },
+];

@@ -8,11 +8,11 @@ const Navbar = () => {
   useEffect(() => {
     // Animação da navbar de cima para baixo
     anime({
-      targets: '.navbar', // Seleciona a navbar
-      translateY: [-100, 0], // Move de -100px (fora da tela) para 0 (posição original)
-      opacity: [0, 1], // Faz com que a opacidade comece em 0 e vá até 1
-      easing: 'easeOutExpo', // Suavização
-      duration: 1500, // Duração da animação
+      targets: '.navbar',
+      translateY: [-100, 0], 
+      opacity: [0, 1], 
+      easing: 'easeOutExpo', 
+      duration: 1500, 
     });
   }, []);
 
