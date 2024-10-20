@@ -7,14 +7,14 @@ const projects = [
     title: "Rizoma - Farm Management WebApp",
     description: "A full-stack e-commerce solution with React and Node.js.",
     image: "",
-    technologies: ["HTML5", "TailwindCSS", "Django", "Azure"]
+    technologies: ["HTML5", "TailwindCSS","Anime.JS", "Django", "Azure"]
   },
   {
     id: 2,
     title: "Recipes by Gab",
     description: "A responsive task management application built with Vue.js.",
     image: "./src/assets/MockupRecipes.jpg",
-    technologies: ["HTML5", "TailwindCSS", "Django, Azure"]
+    technologies: ["HTML5", "Bootstrap", "Javascript"]
   },
   {
     id: 3,
@@ -23,17 +23,28 @@ const projects = [
     image: "./src/assets/MockupDigitalClock.jpg",
     technologies: ["HTML5", "CSS", "Javascript"]
   },
+
+  {
+    id: 4,
+    title: "TicTacToe",
+    description: "An interactive weather dashboard using React and OpenWeatherMap API.",
+    image: "./src/assets/MockupTicTacToe.jpg",
+    technologies: ["HTML5", "CSS", "Javascript"]
+  },
+
 ];
 
 export default function MyProjectsSection() {
+
+  
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
-  // Função para animar a transição quando o projeto selecionado mudar
+ 
   useEffect(() => {
     anime({
       targets: '.project-card',
-      opacity: [0, 1],       // Fade in
-      translateX: [-1000, 0],   // Movimento de baixo para cima
+      opacity: [0, 1],       
+      translateX: [-1000, 0],  
       duration: 1500,
       easing: 'easeOutExpo'
     });
@@ -44,14 +55,14 @@ export default function MyProjectsSection() {
       <div className="max-w-6xl mx-auto ">
         <h2 className="text-5xl font-bold text-center py-12">My Projects</h2>
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-1/3 space-y-4">
+          <div className="w-full max-h-[428px] overflow-y-auto custom-scroll md:w-1/3 space-y-4">
             {projects.map((project) => (
               <button
                 key={project.id}
                 onClick={() => setSelectedProject(project)}
                 className={`w-full text-left p-4 rounded-lg transition-colors ${
                   selectedProject.id === project.id
-                    ? 'bg-[#3C2A21] text-white'
+                    ? 'bg-[#4E3629] text-white'
                     : 'bg-white text-[#3C2A21] hover:bg-gray-200'
                 }`}
               >
@@ -60,7 +71,7 @@ export default function MyProjectsSection() {
             ))}
           </div>
           <div className="w-full md:w-2/3">
-            {/* Container que será animado quando o projeto mudar */}
+
             <div className="bg-[#4E3629] p-6 rounded-lg">
               <img
                 src={selectedProject.image}

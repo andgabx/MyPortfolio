@@ -25,9 +25,9 @@ const About = () => {
   return (
     <section className="w-full py-24 bg-[#3b2314] text-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+        <div className="grid gap-6 grid-cols-2">
           {/* Texto com animação da direita para a esquerda */}
-          <div className="flex flex-col justify-center space-y-4 about-text">
+          <div className="flex flex-col mx-auto md:py-8 justify-center space-y-2 about-text">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 About me
@@ -51,11 +51,9 @@ const About = () => {
           </div>
 
           <img
-            width="550"
-            height="550"
             alt="Hero"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last about-image"
-            src="src/assets/GabrielAboutMe.png"
+            className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover w-full lg:order-last about-image"
+            src="src/assets/GabrielAboutMe.jpg"
           />
         </div>
       </div>

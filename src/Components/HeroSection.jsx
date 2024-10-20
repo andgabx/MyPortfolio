@@ -25,15 +25,13 @@ const HeroSection = () => {
   return (
     <section className="w-full py-24 bg-[#3b2314] text-white hero-section">
       <div className="container px-4 mx-auto md:px-6">
-        <div className="grid gap-6 mx-auto lg:grid-cols[400px_1fr] lg:gap-12 xl:grid-cols-[600px_1fr]">
+        <div className="grid gap-6 grid-cols-2">
           <img
-            width="550"
-            height="550"
             alt="Hero"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-first"
+            className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-first about-image"
             src="src/assets/GabrielProfilePic.png"
           />
-          <div className="flex flex-col justify-center space-y-4">
+          <div className="flex justify-center md:py-8 md:flex-col space-y-2">
             <div className="space-y-2 hero-text"> {/* Adicionada a classe 'hero-text' para o título e a descrição */}
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Anderson Gabriel

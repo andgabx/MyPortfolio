@@ -39,3 +39,24 @@ body {
   font-family: 'Space Mono', monospace;
   --font-monospace: 'Space Mono';
 }
+
+/* Estiliza a barra de rolagem */
+.custom-scroll::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #4E3629; /* Cor do "polegar" da barra */
+  border-radius: 10px; /* Arredondamento */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: #3C2A21; /* Cor do fundo da trilha da barra */
+  border-radius: 10px;
+}
+
+/* Estilo para Firefox */
+.custom-scroll {
+  scrollbar-width: thin; /* Barra fina no Firefox */
+  scrollbar-color: #4E3629 #3C2A21; /* Cor do "polegar" e da trilha no Firefox */
+}
