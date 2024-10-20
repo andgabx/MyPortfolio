@@ -3,10 +3,10 @@ import anime from 'animejs/lib/anime.es.js';
 
 const projects = [
   {
-    id: 1,
+    id: 1, 
     title: "Rizoma - Farm Management WebApp",
-    description: "A full-stack e-commerce solution with React and Node.js.",
-    image: "",
+    description: "WIP",
+    image: "./src/assets/MockupRizoma.jpg",
     technologies: ["HTML5", "TailwindCSS","Anime.JS", "Django", "Azure"]
   },
   {
@@ -29,6 +29,14 @@ const projects = [
     title: "TicTacToe",
     description: "An interactive weather dashboard using React and OpenWeatherMap API.",
     image: "./src/assets/MockupTicTacToe.jpg",
+    technologies: ["HTML5", "CSS", "Javascript"]
+  },
+
+  {
+    id: 5,
+    title: "MyRetroGameList",
+    description: "WIP",
+    image: "./src/assets/MockupDigitalClock.jpg",
     technologies: ["HTML5", "CSS", "Javascript"]
   },
 

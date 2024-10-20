@@ -14,7 +14,7 @@ const About = () => {
 
     anime({
       targets: ".about-text", 
-      translateY: [-50, 0], 
+      translateX: [-1000, 0], 
       opacity: [0, 1], 
       easing: "easeOutExpo", 
       duration: 1000, 
@@ -53,7 +53,7 @@ const About = () => {
           <img
             alt="Hero"
             className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover w-full lg:order-last about-image"
-            src="src/assets/GabrielAboutMe.jpg"
+            src="./src/assets/GabrielAboutMe.jpg"
           />
         </div>
       </div>
