@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="bg-[#3b2314] navbar md-px-48 justify-between p-8">
       <div>
-        <a href='' className="hover:animate-pulse text-2xl bold">AG</a>
+        <a href='' className="hover:animate-pulse text-white text-2xl bold">AG</a>
       </div>
       <div>
         <nav className="text-white grid-flow-col flex gap-4 md:place-self-center md:justify-self-end">
