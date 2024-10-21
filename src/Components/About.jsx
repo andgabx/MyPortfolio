@@ -53,7 +53,7 @@ const About = () => {
           <img
             alt="Hero"
             className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover w-full lg:order-last about-image"
-            src="./src/assets/GabrielAboutMe.jpg"
+            src="assets/GabrielAboutMe.jpg"
           />
         </div>
       </div>

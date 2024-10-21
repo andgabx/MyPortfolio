@@ -29,7 +29,7 @@ const HeroSection = () => {
           <img
             alt="Hero"
             className="hero-image mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-first about-image"
-            src="./src/assets/GabrielProfilePic.png"
+            src="assets/GabrielProfilePic.png"
           />
           <div className="flex hero-text justify-center md:py-8 md:flex-col space-y-2">
             <div className="space-y-2 hero-text"> {/* Adicionada a classe 'hero-text' para o título e a descrição */}
