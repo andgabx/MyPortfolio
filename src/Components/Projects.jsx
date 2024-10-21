@@ -6,21 +6,21 @@ const projects = [
     id: 1, 
     title: "Rizoma - Farm Management WebApp",
     description: "WIP",
-    image: "./src/assets/MockupRizoma.jpg",
-    technologies: ["HTML5", "TailwindCSS","Anime.JS", "Django", "Azure"]
+    image: "src/assets/MockupRizoma.jpg",
+    technologies: ["HTML5", "TailwindCSS","Anime.JS", "Django", "Azure", "PWA"]
   },
   {
     id: 2,
     title: "Recipes by Gab",
     description: "A responsive task management application built with Vue.js.",
-    image: "./src/assets/MockupRecipes.jpg",
+    image: "src/assets/MockupRecipes.jpg",
     technologies: ["HTML5", "Bootstrap", "Javascript"]
   },
   {
     id: 3,
     title: "Digital Clock",
     description: "An interactive weather dashboard using React and OpenWeatherMap API.",
-    image: "./src/assets/MockupDigitalClock.jpg",
+    image: "src/assets/MockupDigitalClock.jpg",
     technologies: ["HTML5", "CSS", "Javascript"]
   },
 
@@ -28,7 +28,7 @@ const projects = [
     id: 4,
     title: "TicTacToe",
     description: "An interactive weather dashboard using React and OpenWeatherMap API.",
-    image: "./src/assets/MockupTicTacToe.jpg",
+    image: "src/assets/MockupTicTacToe.jpg",
     technologies: ["HTML5", "CSS", "Javascript"]
   },
 
@@ -36,8 +36,8 @@ const projects = [
     id: 5,
     title: "MyRetroGameList",
     description: "WIP",
-    image: "./src/assets/MockupDigitalClock.jpg",
-    technologies: ["HTML5", "CSS", "Javascript"]
+    image: "src/assets/MockupMyRetroGameList.jpg",
+    technologies: ["HTML5", "CSS", "Javascript", "Anime.JS", "Django", "Azure"]
   },
 
 ];
