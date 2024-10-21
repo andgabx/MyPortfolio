@@ -8,7 +8,7 @@ import Projects from './Components/Projects';
 
 const App = () => {
   return (
-    <div className="bg-[#3b2314]">
+    <div className="bg-[#3b2314] overflow-x-hidden">
       
       <Navbar/>
 

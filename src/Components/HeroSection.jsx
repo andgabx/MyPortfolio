@@ -23,16 +23,19 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className=" w-full py-24 bg-[#3b2314] text-white hero-section">
-      <div className="container px-4 mx-auto md:px-6">
-        <div className="grid gap-6 grid-cols-2">
+    <section className="w-full py-24 bg-[#3b2314] text-white">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid gap-6 sm:grid-cols-2">
+          {/* Imagem à esquerda */}
           <img
             alt="Hero"
-            className="hero-image mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-first about-image"
+            className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover w-full lg:order-first"
             src="assets/GabrielProfilePic.png"
           />
-          <div className="flex hero-text justify-center md:py-8 md:flex-col space-y-2">
-            <div className="space-y-2 hero-text"> {/* Adicionada a classe 'hero-text' para o título e a descrição */}
+  
+          {/* Texto à direita */}
+          <div className="flex flex-col mx-auto md:py-8 justify-center space-y-2 hero-text">
+            <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Anderson Gabriel
               </h1>
@@ -47,6 +50,8 @@ const HeroSection = () => {
       </div>
     </section>
   );
+  
+  
 };
 
 export default HeroSection;

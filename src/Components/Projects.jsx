@@ -59,7 +59,7 @@ export default function MyProjectsSection() {
   }, []);
 
   return (
-    <section className="text-white mx-auto p-24 project-card">
+    <section className="text-white bg-[#3b2314] mx-auto p-24 project-card">
       <div className="max-w-6xl mx-auto ">
         <h2 className="text-5xl font-bold text-center py-12">My Projects</h2>
         <div className="flex flex-col md:flex-row gap-8">
