@@ -1,60 +1,66 @@
-import React, { useState, useEffect } from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import React, { useState, useEffect } from "react";
+import anime from "animejs/lib/anime.es.js";
 
 const projects = [
   {
-    id: 1, 
+    id: 1,
     title: "Rizoma - Farm Management WebApp",
-    description: "WIP",
+    description: "WIP - A digital tool designed to help farmers efficiently manage agroecological activities, such as planting, harvesting, and resource management. It promotes sustainability by optimizing resources, boosting productivity, and supporting regenerative practices in agriculture.",
     image: "assets/MockupRizoma.jpg",
-    technologies: ["HTML5", "TailwindCSS","Anime.JS", "Django", "Azure", "PWA"]
+    technologies: [
+      "HTML5",
+      "TailwindCSS",
+      "Anime.JS",
+      "Django",
+      "Azure",
+      "PWA",
+    ],
   },
   {
     id: 2,
     title: "Recipes by Gab",
-    description: "A responsive task management application built with Vue.js.",
+    description: "A digital collection of culinary recipes designed for cooking enthusiasts. This project was created as part of the Introduction to Computing course at Cesar School, and I used it to practice working with Bootstrap.",
     image: "assets/MockupRecipes.jpg",
-    technologies: ["HTML5", "Bootstrap", "Javascript"]
+    technologies: ["HTML5", "Bootstrap", "Javascript"],
   },
   {
     id: 3,
     title: "Digital Clock",
-    description: "An interactive weather dashboard using React and OpenWeatherMap API.",
+    description:
+      "This was my first project incorporating JavaScript, alongside HTML and CSS, moving beyond just static websites. It showcases the basics I've learned over the past few months and marks the beginning of many future projects.",
     image: "assets/MockupDigitalClock.jpg",
-    technologies: ["HTML5", "CSS", "Javascript"]
+    technologies: ["HTML5", "CSS", "Javascript"],
   },
 
   {
     id: 4,
     title: "TicTacToe",
-    description: "An interactive weather dashboard using React and OpenWeatherMap API.",
+    description:
+      "I also built to practice my JavaScript skills. It holds a special place for me, as I used to play it with my dad when I was younger.",
     image: "assets/MockupTicTacToe.jpg",
-    technologies: ["HTML5", "CSS", "Javascript"]
+    technologies: ["HTML5", "CSS", "Javascript"],
   },
 
   {
     id: 5,
     title: "MyRetroGameList",
-    description: "WIP",
+    description:
+      "WIP - A web application inspired by the concept of MyAnimeList, but focused on retro games. The main idea is to create a platform where users can list games from discontinued consoles, track those they have played or completed, and manage a list of games they plan to play in the future.",
     image: "assets/MockupMyRetroGameList.jpg",
-    technologies: ["HTML5", "CSS", "Javascript", "Anime.JS", "Django", "Azure"]
+    technologies: ["HTML5", "CSS", "Javascript", "Anime.JS", "Django", "Azure"],
   },
-
 ];
 
 export default function MyProjectsSection() {
-
-  
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
- 
   useEffect(() => {
     anime({
-      targets: '.project-card',
-      opacity: [0, 1],       
-      translateX: [-1000, 0],  
+      targets: ".project-card",
+      opacity: [0, 1],
+      translateX: [-1000, 0],
       duration: 1500,
-      easing: 'easeOutExpo'
+      easing: "easeOutExpo",
     });
   }, []);
 
@@ -70,8 +76,8 @@ export default function MyProjectsSection() {
                 onClick={() => setSelectedProject(project)}
                 className={`w-full text-left p-4 rounded-lg transition-colors ${
                   selectedProject.id === project.id
-                    ? 'bg-[#4E3629] text-white'
-                    : 'bg-white text-[#3C2A21] hover:bg-gray-200'
+                    ? "bg-[#4E3629] text-white"
+                    : "bg-white text-[#3C2A21] hover:bg-gray-200"
                 }`}
               >
                 {project.title}
@@ -79,15 +85,18 @@ export default function MyProjectsSection() {
             ))}
           </div>
           <div className="w-full md:w-2/3">
-
             <div className="bg-[#4E3629] p-6 rounded-lg">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
                 className="w-full h-64 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-2xl font-semibold mb-2">{selectedProject.title}</h3>
-              <p className="text-gray-300 mb-4">{selectedProject.description}</p>
+              <h3 className="text-2xl font-semibold mb-2">
+                {selectedProject.title}
+              </h3>
+              <p className="text-gray-300 mb-4">
+                {selectedProject.description}
+              </p>
               <div className="flex flex-wrap gap-2">
                 {selectedProject.technologies.map((tech, index) => (
                   <span

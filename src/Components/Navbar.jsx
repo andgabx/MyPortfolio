@@ -29,7 +29,7 @@ const Navbar = () => {
           <a href='https://github.com/andgabx' target='_blank' className='p-3 text-3xl hover:animate-bounce'>
             <FaGithub />
           </a>
-          <a href='' target='_blank' className='p-3 text-3xl hover:animate-bounce'>
+          <a href='https://wa.me/5581999758852' target='_blank' className='p-3 text-3xl hover:animate-bounce'>
             <FaWhatsapp />
           </a>
         </nav>
