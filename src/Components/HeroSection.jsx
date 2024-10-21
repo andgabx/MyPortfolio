@@ -29,7 +29,7 @@ const HeroSection = () => {
           {/* Imagem à esquerda */}
           <img
             alt="Hero"
-            className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl object-cover w-full lg:order-first"
+            className="mx-auto max-w-[600px] aspect-square overflow-hidden rounded-xl hero-image object-cover w-full lg:order-first"
             src="assets/GabrielProfilePic.png"
           />
   
