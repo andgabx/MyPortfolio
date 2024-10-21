@@ -1,34 +1,43 @@
-# My Portfolio
+# 🌐 **Anderson Gabriel's Portfolio**
 
-Welcome to my personal portfolio project! This is my first portfolio website where I showcase my skills, projects, and achievements as a web developer. The project is built using modern technologies and will be deployed soon.
+🎉 **Welcome to my personal portfolio!** This is my first portfolio website where I showcase my skills, projects, and achievements as a front-end developer. The project is built using modern technologies and **is now live**!
 
-## 🌟 Features
-
-- **Responsive Design**: Fully responsive and optimized for both mobile and desktop views.
-- **Projects Showcase**: A dedicated section to display my key projects.
-- **Smooth Navigation**: Seamless user experience with intuitive navigation.
-- **Fast Performance**: Optimized for speed using modern build tools like Vite and Tailwind CSS.
-- **Animations Coming Soon**: Animations will be added using **Framer Motion** for an enhanced interactive experience.
-
-## 🛠️ Technologies Used
-
-- **HTML5 & CSS3**: For structuring and styling the website.
-- **Tailwind CSS**: Utility-first CSS framework to build custom designs quickly.
-- **JavaScript/TypeScript**: For interactive elements and functionality.
-- **Vite**: A fast and lightweight build tool.
-- **PostCSS**: For processing CSS with Tailwind.
-- **Anime.JS**: Simple animations library.
-
-## 🚀 Deployment
-
-The website will be deployed soon. Stay tuned for the live version!
-
-## 🧑‍💻 Author
-
-- **Anderson Gabriel** - Front-End developer passionate about creating modern and responsive web applications.
-
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/andgabx/) or check out my [GitHub](https://github.com/andgabx) for more projects!
+🔗 **Portfolio Link**: [Check it out here](https://portfolioandgabx.vercel.app/)
 
 ---
 
-Thank you for visiting my portfolio!
+## 🌟 **Features**
+
+- 🖥️ **Responsive Design**: Fully optimized for both mobile and desktop views.
+- 🗂️ **Projects Showcase**: A dedicated section to highlight my key projects.
+- 🧭 **Smooth Navigation**: Intuitive navigation for a seamless user experience.
+- ⚡ **Fast Performance**: Optimized for speed using modern tools like Vite and Tailwind CSS.
+- 🎨 **Animations with Anime.JS**: Subtle animations for an enhanced visual experience.
+
+---
+
+## 🛠️ **Technologies Used**
+
+- **Tailwind CSS**: A utility-first CSS framework to quickly build custom designs.
+- **JavaScript**: To add interactivity and dynamic functionality to the site.
+- **Vite**: A fast and lightweight build tool for modern web development.
+- **PostCSS**: Used for processing CSS with Tailwind.
+- **Anime.JS**: A powerful animation library for creating dynamic visual effects.
+
+---
+
+## 🚀 **Deployment**
+
+The website is live! Visit the link above to explore the final version of my portfolio. Feel free to browse through and check out the projects.
+
+---
+
+## 🧑‍💻 **Author**
+
+- **Anderson Gabriel** - Front-End Developer passionate about creating modern and responsive web applications.
+
+💼 Connect with me on [LinkedIn](https://www.linkedin.com/in/andgabx/) or check out more of my projects on [GitHub](https://github.com/andgabx).
+
+---
+
+🙏 **Thank you for visiting my portfolio!**
