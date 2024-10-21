@@ -19,22 +19,22 @@ const Contact = () => {
     <section className="bg-[#3b2314] py-10 flex items-center justify-center contact-section">
       <div className="container mx-auto ">
         <div className="max-w-md mx-auto">
-          <h1 className="text-3xl pb-4 font-bold tracking-tighter sm:text-5xl text-center ">Get in Touch</h1>
+          <h1 className="text-3xl pb-4 font-bold tracking-tighter sm:text-5xl text-center text-white">Get in Touch</h1>
           <div className="space-y-6 py-4">
             <a href="mailto:gabrielvalencasa98@gmail.com" className="flex items-center justify-center space-x-3 hover:underline transition-colors">
-              <CiMail className="h-5 w-5" />
+              <CiMail className="text-white h-5 w-5" />
               <span className='text-white'>gabrielvalencasa98@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/andgabx/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center space-x-3 hover:underline transition-colors">
-              <CiLinkedin className="h-5 w-5" />
+              <CiLinkedin className="text-white h-5 w-5" />
               <span className='text-white'>LinkedIn Profile</span>
             </a>
             <a href="https://wa.me/5581999758852" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center space-x-3 hover:underline transition-colors">
-              <FaWhatsapp className="h-5 w-5" />
+              <FaWhatsapp className="text-white h-5 w-5" />
               <span className='text-white'>WhatsApp</span>
             </a>
             <a href="https://github.com/andgabx" target='_blank' className="flex items-center justify-center space-x-3 hover:underline transition-colors">
-              <FaGithub className="h-5 w-5" />
+              <FaGithub className="text-white h-5 w-5" />
               <span className='text-white'>Github Profile</span>
             </a>
           </div>
