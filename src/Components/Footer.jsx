@@ -14,9 +14,9 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-[#3b2314] py-24 footer justify-around text-neutral-content items-center">
+    <footer className="bg-[#3b2314] py-24  footer justify-around text-neutral-content items-center">
       <aside className="grid-flow-col items-center">
-        <p className="text-white">{new Date().getFullYear()} - Thanks for checking my Portfolio!</p>
+        <p className="text-white text-center break-words">{new Date().getFullYear()} - Thanks for checking my Portfolio!</p>
       </aside>
     </footer>
   );

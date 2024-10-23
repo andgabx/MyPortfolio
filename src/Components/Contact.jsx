@@ -17,13 +17,13 @@ const Contact = () => {
 
   return (
     <section className="bg-[#3b2314] py-10 flex items-center justify-center contact-section">
-      <div className="container mx-auto ">
+      <div className="container mx-auto px-4">
         <div className="max-w-md mx-auto">
           <h1 className="text-3xl pb-4 font-bold tracking-tighter sm:text-5xl text-center text-white">Get in Touch</h1>
-          <div className="space-y-6 py-4">
-            <a href="mailto:gabrielvalencasa98@gmail.com" className="flex items-center justify-center space-x-3 hover:underline transition-colors">
+          <div className="space-y-6 py-4 min-w-[200px]:break-words">
+            <a href="mailto:gabrielvalencasa98@gmail.com" className="flex break-words items-center justify-center hover:underline transition-colors">
               <CiMail className="text-white h-5 w-5" />
-              <span className='text-white'>gabrielvalencasa98@gmail.com</span>
+              <span className='text-white px-2'>gabrielvalencasa98@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/andgabx/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center space-x-3 hover:underline transition-colors">
               <CiLinkedin className="text-white h-5 w-5" />

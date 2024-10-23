@@ -65,9 +65,9 @@ export default function MyProjectsSection() {
   }, []);
 
   return (
-    <section className="text-white bg-[#3b2314] mx-auto p-24 project-card">
+    <section className="text-white bg-[#3b2314] mx-auto min-[300px]:p-8 p-24 project-card">
       <div className="max-w-6xl mx-auto ">
-        <h2 className="text-5xl font-bold text-center py-12">My Projects</h2>
+        <h2 className="text-5xl font-bold text-center break-words py-12">My Projects</h2>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="w-full max-h-[428px] overflow-y-auto custom-scroll md:w-1/3 space-y-4">
             {projects.map((project) => (
@@ -97,7 +97,7 @@ export default function MyProjectsSection() {
               <p className="text-gray-300 break-words mb-4">
                 {selectedProject.description}
               </p>
-              <div className="flex flex-wrap break-words gap-2">
+              <div className="flex flex-wrap  gap-2">
                 {selectedProject.technologies.map((tech, index) => (
                   <span
                     key={index}
