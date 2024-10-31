@@ -5,49 +5,42 @@ const projects = [
   {
     id: 1,
     title: "Rizoma - Farm Management WebApp",
-    description: "WIP - A digital tool designed to help farmers efficiently manage agroecological activities, such as planting, harvesting, and resource management. It promotes sustainability by optimizing resources, boosting productivity, and supporting regenerative practices in agriculture.",
+    description: "WIP - A digital tool designed to help farmers efficiently manage agroecological activities...",
     image: "assets/MockupRizoma.jpg",
-    technologies: [
-      "HTML5",
-      "TailwindCSS",
-      "Anime.JS",
-      "Django",
-      "Azure",
-      "PWA",
-    ],
+    technologies: ["HTML5", "TailwindCSS", "Anime.JS", "Django", "Azure", "PWA"],
+    repositoryUrl: "https://github.com/jhrvo0/Rizoma",
   },
   {
     id: 2,
     title: "Recipes by Gab",
-    description: "A digital collection of culinary recipes designed for cooking enthusiasts. This project was created as part of the Introduction to Computing course at Cesar School, and I used it to practice working with Bootstrap.",
+    description: "A digital collection of culinary recipes designed for cooking enthusiasts...",
     image: "assets/MockupRecipes.jpg",
     technologies: ["HTML5", "Bootstrap", "Javascript"],
+    repositoryUrl: "https://github.com/andgabx/RecipesByGab",
   },
   {
     id: 3,
     title: "Digital Clock",
-    description:
-      "This was my first project incorporating JavaScript, alongside HTML and CSS, moving beyond just static websites. It showcases the basics I've learned over the past few months and marks the beginning of many future projects.",
+    description: "This was my first project incorporating JavaScript, alongside HTML and CSS...",
     image: "assets/MockupDigitalClock.jpg",
     technologies: ["HTML5", "CSS", "Javascript"],
+    repositoryUrl: "https://github.com/andgabx/Digital-Clock",
   },
-
   {
     id: 4,
     title: "TicTacToe",
-    description:
-      "I also built to practice my JavaScript skills. It holds a special place for me, as I used to play it with my dad when I was younger.",
+    description: "I also built to practice my JavaScript skills. It holds a special place for me...",
     image: "assets/MockupTicTacToe.jpg",
     technologies: ["HTML5", "CSS", "Javascript"],
+    repositoryUrl: "https://github.com/andgabx/TicTacToe",
   },
-
   {
     id: 5,
     title: "MyRetroGameList",
-    description:
-      "WIP - A web application inspired by the concept of MyAnimeList, but focused on retro games. The main idea is to create a platform where users can list games from discontinued consoles, track those they have played or completed, and manage a list of games they plan to play in the future.",
+    description: "WIP - A web application inspired by the concept of MyAnimeList, but focused on retro games...",
     image: "assets/MockupMyRetroGameList.jpg",
     technologies: ["HTML5", "CSS", "Javascript", "Anime.JS", "Django", "Azure"],
+    repositoryUrl: "https://github.com/andgabx/MyRetroGameList",
   },
 ];
 
@@ -84,7 +77,10 @@ export default function MyProjectsSection() {
               </button>
             ))}
           </div>
-          <div className="w-full md:w-2/3">
+          <div
+            className="w-full md:w-2/3 cursor-pointer"
+            onClick={() => window.open(selectedProject.repositoryUrl, "_blank")}
+          >
             <div className="bg-[#4E3629] p-6 rounded-lg">
               <img
                 src={selectedProject.image}
@@ -97,7 +93,7 @@ export default function MyProjectsSection() {
               <p className="text-gray-300 break-words mb-4">
                 {selectedProject.description}
               </p>
-              <div className="flex flex-wrap  gap-2">
+              <div className="flex flex-wrap gap-2">
                 {selectedProject.technologies.map((tech, index) => (
                   <span
                     key={index}
