@@ -79,7 +79,7 @@ const Panel = ({ open, setOpen, id, title, imgSrc, description, technologies, re
           }}
           onClick={() => window.open(repositoryUrl, "_blank")} // Redireciona para o repositório
         >
-          <div className="px-4 py-2 bg-black/40 backdrop-blur-sm text-white rounded-lg w-full">
+          <div className="px-4 py-2 bg-black/80 backdrop-blur-sm text-white rounded-t-xl w-full">
             <p className="mb-4">{description}</p>
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, index) => (
